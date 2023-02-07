@@ -7,21 +7,35 @@
   </head>
 
   <body onload="animate_string('target')">
-    <pre id="target">@markymauro </pre>
+    <div class="desc">
+      <p>I'm a Software Developer.</p>
+      <p>I've gone viral on Pinterest.</p>
+      <p>I've made Snap Lenses with over 3.5 million views.</p>
+      <p>I surf and play soccer.</p>
+      <p>That's about it.</p>
+    </div>
 
     <div class="about">
-      <a href="./about.html" style="color: rgb(0, 255, 0)">about </a>
+      <a href="./index.html" style="color: rgb(0, 255, 0)">back </a>
     </div>
 
     <style>
       #target {
         font-size: 3rem;
         text-align: center;
-        padding: 250px 0;
+        padding: 100px 0;
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       }
 
+      .desc {
+        text-align: center;
+        margin-top: 250px;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 1.5rem;
+      }
+
       .about {
+        margin-top: 100px;
         text-align: center;
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       }
@@ -41,7 +55,7 @@
         setInterval(function () {
           text = text[text.length - 1] + text.substring(0, text.length - 1);
           textNode.data = text;
-        }, 100);
+        }, 150);
       }
     </script>
   </body>
